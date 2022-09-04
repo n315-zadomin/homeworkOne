@@ -1,0 +1,49 @@
+footer {
+      position: relative;
+      height: 190px;
+    background-color: #f7f8fa;
+    
+    .foot-text {
+        position: absolute;
+        margin-top: 60px; 
+        margin-left: 30px;
+        p {
+            font-size: 16px;
+            color: gray;
+
+            .bold {
+                color: #000;
+            }
+        }
+
+        .boldText {
+           text-decoration: underline;  
+           margin-left: 20px;
+           font-size: 16px;
+             color: #000;
+            text-decoration-color: #9fa19f;
+        }
+    }
+
+    .foot-images {
+
+        #rcorners1 {
+            position: absolute;
+            border-radius: 45px;
+            padding:5px 10px 20px; 
+            width: 150px;
+            height: 5px;  
+            margin-left:1350px;
+            margin-top: 70px;
+            background: #00acee;
+            color: #fff;
+        } 
+
+        img {
+            width: 100px;
+            height: 60px;
+            margin-left:1350px;
+            margin-top: 120px;
+        }
+    }
+}

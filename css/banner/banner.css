@@ -1,0 +1,25 @@
+.box {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  background-color: #000;
+}
+.box .text {
+  position: absolute;
+}
+.box .text h1 {
+  margin-top: 50px;
+  margin-left: 20px;
+  color: lightgray;
+}
+.box .text p {
+  color: lightgray;
+  font-size: 16.5px;
+  margin-left: 20px;
+}
+
+hr {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ab2694), color-stop(#904aa3), color-stop(#775ea7), color-stop(#686ca0), to(#687593));
+  background-image: linear-gradient(to right, #ab2694, #904aa3, #775ea7, #686ca0, #687593);
+  height: 10px;
+}

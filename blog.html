@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASS: Sass Blog</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- banner with announcement -->
+    <div class="box">
+      <div class="text">
+        <h1>Black Lives Matter</h1>
+        <p>
+          Sass stands with the protesters against police violence. We encourage
+          our users to get in the streets and join them if you can.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- begin navigation -->
+    <nav>
+      <!-- sass logo -->
+      <div class="image">
+        <a href="index.html"><img src="images/sass-removebg-preview.png" /></a>
+      </div>
+
+      <!-- sass links -->
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="install.html">Install</a>
+        <a href="learn.html">Learn Sass</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </nav>
+
+    <!-- text underneath navigation -->
+    <div class="nav-box">
+      <div id="top-line"></div>
+      <p>Sass Blog</p>
+      <div id="top-line"></div>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="blogPage">
+      <p>Page 1 of 7</p>
+      <h1>Request for Comments: Strict Unary Operators</h1>
+      <p class="under">Posted 15 June 2022 by Natalie Weizenbaum</p>
+
+      <p>
+        Do you know what margin: $a -$b does in Sass? If you said “the same
+        thing as margin: $a (-$b), I’m sorry, but you’re wrong. It’s actually
+        the same thing as margin: $a - $b. Don’t worry, you’re not the first
+        person to get tripped up by this weird corner of Sass’s parser! But our
+        new language proposal aims to fix that.
+      </p>
+      <p>
+        In the <span class="bb">Strict Unary Operators proposal</span>, which is
+        currently open for community feedback, we propose to first deprecate and
+        then eventually disallow expressions of the form $a -$b. We know
+        deprecations are never pleasant, but this should be fairly painless as
+        they go: you can simply write $a - $b or $a (-$b), depending which you
+        intend. We’ll also provide a Sass migrator migration to automatically
+        update your stylesheets.
+      </p>
+
+      <!-- blog unordered lists -->
+      <p class="bsl">Deprecated:</p>
+      <ul>
+        <li>
+          $a -$b will no longer be allowed, because it’s unclear what the author
+          intended and the current behavior is likely to be incorrect.
+        </li>
+      </ul>
+
+      <p class="bsl">Still allowed:</p>
+      <ul>
+        <li>
+          $a - $b will continue to work, since it’s clearly supposed to indicate
+          subtraction.
+        </li>
+        <li>$a ...</li>
+      </ul>
+
+      <!-- second blog -->
+      <br />
+      <h1>Embedded Sass is Live</h1>
+      <p class="under">Posted 1 February 2022 by Natalie Weizenbaum</p>
+      <p>
+        After several years of planning and development, I’m excited to finally
+        announce the stable release of Embedded Dart Sass along with its first
+        official wrapper, the sass-embedded package available now on npm!
+      </p>
+      <p>
+        Embedded Sass is an ongoing effort to make a highly-performant Sass
+        library available to as many different languages as possible, starting
+        with Node.js. Although Node.js already has access to the pure-JS sass
+        package, the nature of JavaScript inherently limits how quickly this
+        package can process large Sass files especially in asynchronous mode. We
+        expect sass-embedded to be a major boon to developers for whom
+        compilation speed is a concern, particularly the remaining users of
+        node-sass for whom performance has been a major reason to avoid Dart
+        Sass.
+      </p>
+      <p>
+        The sass-embedded package fully supports the new JS API as well as the
+        legacy API other than a few cosmetic options. You can use it as a
+        drop-in replacement for the sass package, and it should work with all
+        the same build plugins…
+      </p>
+
+      <p class="next">Next page</p>
+    </div>
+    <!-- footer  -->
+    <footer>
+      <div class="tiny-sec">
+        <div class="tiny-secText">
+          <p>Current Releases:</p>
+          <p class="underline">Dart Sass 1.54.8</p>
+          <p class="underline">LibSass 3.6.5</p>
+          <p class="underline">Ruby Sass</p>
+          <p class="underline">Implementation Guide</p>
+        </div>
+      </div>
+      <!-- text inside the footer -->
+      <div class="foot-text">
+        <p>
+          Sass &copy; 2006–2022 the Sass team, and numerous contributors. It is
+          available for use and modification under the
+          <span class="bold">MIT License.</span>
+        </p>
+        <span class="boldText">Sass on GitHub</span>
+        <span class="boldText"> Website Source Code </span>
+        <span class="boldText"> Style Guide </span>
+        <span class="boldText"> Community Guidelines</span>
+      </div>
+
+      <div class="foot-images">
+        <p id="rcorners1">Follow @SassCSS</p>
+        <img
+          src="images/powered-removebg-preview.png"
+          alt="Powered by MacStadium Logo"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

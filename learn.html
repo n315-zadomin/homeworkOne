@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASS: Sass Basics</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- banner with announcement -->
+    <div class="box">
+      <div class="text">
+        <h1>Black Lives Matter</h1>
+        <p>
+          Sass stands with the protesters against police violence. We encourage
+          our users to get in the streets and join them if you can.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- begin navigation -->
+    <nav>
+      <!-- sass logo -->
+      <div class="image">
+        <a href="index.html"><img src="images/sass-removebg-preview.png" /></a>
+      </div>
+
+      <!-- sass links -->
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="install.html">Install</a>
+        <a href="learn.html">Learn Sass</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </nav>
+
+    <!-- text underneath navigation -->
+    <div class="nav-box">
+      <div id="top-line"></div>
+      <p>Sass Basics</p>
+      <div id="top-line"></div>
+    </div>
+
+    <!-- top section with basic description -->
+    <div class="topOne-section">
+      <p>
+        Before you can use Sass, you need to set it up on your project. If you
+        want to just browse here, go ahead, but we recommend you go install Sass
+        first. <a href="install.html">Go here</a> if you want to learn how to
+        get everything set up.
+      </p>
+    </div>
+
+    <!-- begin text -->
+    <div class="learnContent">
+      <h1>Preprocessing</h1>
+      <p>
+        CSS on its own can be fun, but stylesheets are getting larger, more
+        complex, and harder to maintain. This is where a preprocessor can help.
+        Sass has features that don't exist in CSS yet like nesting, mixins,
+        inheritance, and other nifty goodies that help you write robust,
+        maintainable CSS.
+      </p>
+
+      <p>
+        Once you start tinkering with Sass, it will take your preprocessed Sass
+        file and save it as a normal CSS file that you can use in your website.
+      </p>
+
+      <p>
+        The most direct way to make this happen is in your terminal. Once Sass
+        is installed, you can compile your Sass to CSS using the sass command.
+        You'll need to tell Sass which file to build from, and where to output
+        CSS to. For example, running sass input.scss output.css from your
+        terminal would take a single Sass file, input.scss, and compile that
+        file to output.css.
+      </p>
+
+      <p>
+        You can also watch individual files or directories with the --watch
+        flag. The watch flag tells Sass to watch your source files for changes,
+        and re-compile CSS each time you save your Sass. If you wanted to watch
+        (instead of manually build) your input.scss file, you'd just add the
+        watch flag to your command, like so:
+      </p>
+
+      <!-- code snippit -->
+      <div class="codeBox">
+        <p class="codeBox-text">sass --watch input.scss output.css</p>
+      </div>
+
+      <p>
+        You can watch and output to directories by using folder paths as your
+        input and output, and separating them with a colon. In this example:
+      </p>
+
+      <!-- code snippit -->
+      <div class="codeBox">
+        <p class="codeBox-text">sass --watch app/sass:public/stylesheets</p>
+      </div>
+
+      <p>
+        Sass would watch all files in the app/sass folder for changes, and
+        compile CSS to the public/stylesheets folder.
+      </p>
+
+      <!-- code snippit -->
+      <div class="codeBox">
+        <p class="codeBox-text">Fun Fact:</p>
+        <p class="codeBox-text">
+          Sass has two syntaxes! The SCSS syntax (.scss) is used most commonly.
+          It's a superset of CSS, which means all valid CSS is also valid SCSS.
+          The indented syntax (.sass) is more unusual: it uses indentation
+          rather than curly braces to nest statements, and newlines instead of
+          semicolons to separate them. All our examples are available in both
+          syntaxes.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <div class="tiny-sec">
+        <div class="tiny-secText">
+          <p>Current Releases:</p>
+          <p class="underline">Dart Sass 1.54.8</p>
+          <p class="underline">LibSass 3.6.5</p>
+          <p class="underline">Ruby Sass</p>
+          <p class="underline">Implementation Guide</p>
+        </div>
+      </div>
+      <!-- text inside the footer -->
+      <div class="foot-text">
+        <p>
+          Sass &copy; 2006–2022 the Sass team, and numerous contributors. It is
+          available for use and modification under the
+          <span class="bold">MIT License.</span>
+        </p>
+        <span class="boldText">Sass on GitHub</span>
+        <span class="boldText"> Website Source Code </span>
+        <span class="boldText"> Style Guide </span>
+        <span class="boldText"> Community Guidelines</span>
+      </div>
+
+      <div class="foot-images">
+        <p id="rcorners1">Follow @SassCSS</p>
+        <img
+          src="images/powered-removebg-preview.png"
+          alt="Powered by MacStadium Logo"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

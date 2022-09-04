@@ -1,0 +1,37 @@
+nav {
+  height: 70px;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .image {
+  margin-left: 20px;
+  height: 100%;
+}
+nav .image img {
+  height: 80%;
+}
+nav .links {
+  margin-right: 20px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .links a {
+  text-decoration: none;
+  color: #fff;
+}
